@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="top.littledavid.snake.MainActivity">
+    tools:context="top.littledavid.snakeExamen.top.nuevaGeneracionDinamita.snakeExamen.MainActivity">
 
-    <top.littledavid.snake.SnakeGameView
+    <top.Uaa.snakeExamen.SnakeGameView
         android:id="@+id/snake"
         android:layout_width="match_parent"
         android:layout_height="0dp"

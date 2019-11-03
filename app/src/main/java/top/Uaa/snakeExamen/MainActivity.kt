@@ -1,25 +1,24 @@
-package top.littledavid.snake
+package top.Uaa.snakeExamen
 
 import android.content.DialogInterface
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.app.AlertDialog
-import android.text.AlteredCharSequence
 import android.view.View
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
-import top.littledavid.snake.R.id.snake
-import top.littledavid.snake.callbacks.OnCrashListener
-import top.littledavid.snake.callbacks.OnEatenFoodListener
+import top.Uaa.snakeExamen.R
+import top.Uaa.snakeExamen.Interfaces.OnCrashListener
+import top.Uaa.snakeExamen.Interfaces.OnEatenFoodListener
 
 class MainActivity : AppCompatActivity() {
-    //游戏分数
+    //Puntaje del juego
     var point = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        //设置贪吃蛇吃到食物后的监听
+        //Configuracion cuando coma la serpiente
         snake.eatenListener = object : OnEatenFoodListener {
             override fun onEaten() {
                 point += 1

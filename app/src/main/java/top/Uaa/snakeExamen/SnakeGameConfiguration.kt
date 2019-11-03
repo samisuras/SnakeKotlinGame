@@ -1,8 +1,5 @@
-package top.littledavid.snake
+package top.Uaa.snakeExamen
 
-/**
- * Created by IT on 8/15/2018.
- */
 object SnakeGameConfiguration {
     var GRID_WIDTH = 0F
     var GRID_HEIGHT = 0F

@@ -1,20 +1,19 @@
-package top.littledavid.snake
+package top.Uaa.snakeExamen
 
 import android.graphics.Canvas
 import android.graphics.Paint
-import android.graphics.RectF
-import android.view.ViewDebug
-import top.littledavid.logerlibrary.e
 
 /**
- * 贪吃蛇游戏中所有游戏的父类,所有的游戏对象都将会从此类继承
+ * clase principal de todos los juegos en el juego Snake, todos los objetos del juego heredarán de esta clase
  * */
 open class GameObject(var row: Int, var column: Int) {
 
     /**
-     * 绘制游戏对象
-     * @param canvas 画布对象
-     * @param paint 画笔对象
+     * Dibujar objetos del juego
+
+     * @param canvas Objeto de lona
+     * @param paint Objeto de pincel
+
      * */
     open fun draw(canvas: Canvas, x: Float, y: Float, paint: Paint) {
         canvas.drawRect(x, y, x + SnakeGameConfiguration.GRID_WIDTH, y + SnakeGameConfiguration.GRID_HEIGHT, paint)

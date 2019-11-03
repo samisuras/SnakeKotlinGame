@@ -1,12 +1,9 @@
-package top.littledavid.snake
+package top.Uaa.snakeExamen
 
 import android.graphics.Canvas
 import android.graphics.Paint
 
 
-/**
- * 贪吃蛇吃的食物
- * */
 class Food(row: Int, column: Int) : GameObject(row, column) {
     override fun draw(canvas: Canvas, x: Float, y: Float, paint: Paint) {
         val gw = SnakeGameConfiguration.GRID_WIDTH

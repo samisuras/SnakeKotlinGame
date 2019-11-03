@@ -1,4 +1,4 @@
-package top.littledavid.snake
+package top.Uaa.snakeExamen
 
 import android.graphics.Color
 import android.graphics.Paint
@@ -8,7 +8,7 @@ import android.graphics.Paint
  */
 object SnakeGamePaint {
     /**
-     * 画蛇身体的画笔
+     * Zona para pintar las cosas
      * */
     val snakeBodyPaint = Paint().apply {
         isDither = true
@@ -18,7 +18,7 @@ object SnakeGamePaint {
     }
 
     /**
-     * 画蛇头部的画笔
+     * Pintar la cabeza de la serpiente
      * */
     val snakeHeaderPaint = Paint().apply {
         isDither = true
@@ -27,7 +27,7 @@ object SnakeGamePaint {
         color = Color.BLUE
     }
     /**
-     * 话食物的画笔
+     * Color de la comida
      * */
     val foodPaint = Paint().apply {
         isDither = true
@@ -37,7 +37,7 @@ object SnakeGamePaint {
     }
 
     /**
-     * 话墙壁的画笔
+     * Paredes
      * */
     val wallPaint = Paint().apply {
         isDither = true
